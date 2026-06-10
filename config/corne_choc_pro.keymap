@@ -14,6 +14,70 @@
 };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        delete {
+            bindings = <&kp DELETE>;
+            key-positions = <9 10>;
+        };
+
+        backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <11 10>;
+        };
+
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <35 36>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <4 3>;
+        };
+
+        insert {
+            bindings = <&kp INS>;
+            key-positions = <32 31>;
+        };
+
+        escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <3 2>;
+        };
+
+        left_control {
+            bindings = <&kp LEFT_CONTROL>;
+            key-positions = <18 17>;
+        };
+
+        right_control {
+            bindings = <&kp RIGHT_CONTROL>;
+            key-positions = <23 24>;
+        };
+
+        left_alt {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <17 16>;
+        };
+
+        right_alt {
+            bindings = <&kp LALT>;
+            key-positions = <24 25>;
+        };
+
+        control_alt_left {
+            bindings = <&kp LA(LCTRL)>;
+            key-positions = <18 17 16>;
+        };
+
+        control_alt_right {
+            bindings = <&kp LA(LCTRL)>;
+            key-positions = <23 24 25>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
