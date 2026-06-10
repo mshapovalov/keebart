@@ -125,10 +125,10 @@
             //                    | GUI |     | SPC   |        | ENT   |     | ALT |
 
             bindings = <
-&trans  &trans  &trans    &trans     &trans     &trans  &trans  &trans  &trans  &kp HOME   &kp UP_ARROW    &kp END          &trans  &trans
-&trans  &trans  &trans    &mkp RCLK  &mkp LCLK  &trans  &trans  &trans  &trans  &kp LEFT   &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
-&trans  &trans  &kp PIPE  &kp TILDE  &kp PLUS   &trans                  &trans  &kp UNDER  &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans  &trans
-                          &trans     &trans     &trans                  &trans  &trans     &trans
+&trans  &trans  &trans    &trans     &trans     &trans  &kp C_BKLT_TOG  &trans  &trans  &kp HOME   &kp UP_ARROW    &kp END          &trans  &trans
+&trans  &trans  &trans    &mkp RCLK  &mkp LCLK  &trans  &trans          &trans  &trans  &kp LEFT   &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
+&trans  &trans  &kp PIPE  &kp TILDE  &kp PLUS   &trans                          &trans  &kp UNDER  &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans  &trans
+                          &trans     &trans     &trans                          &trans  &trans     &trans
             >;
         };
 
