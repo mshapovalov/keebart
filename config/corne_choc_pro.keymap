@@ -76,6 +76,21 @@
             bindings = <&kp LA(LCTRL)>;
             key-positions = <23 24 25>;
         };
+
+        win_f {
+            bindings = <&kp LG(F)>;
+            key-positions = <4 3 2>;
+        };
+
+        win_j {
+            bindings = <&kp LG(J)>;
+            key-positions = <9 10 11>;
+        };
+
+        ringt_win {
+            bindings = <&kp LGUI>;
+            key-positions = <35 36 37>;
+        };
     };
 
     keymap {
