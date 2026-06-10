@@ -91,6 +91,11 @@
             bindings = <&kp LGUI>;
             key-positions = <35 36 37>;
         };
+
+        f_layer {
+            bindings = <&mo 4>;
+            key-positions = <42 43>;
+        };
     };
 
     keymap {
@@ -125,10 +130,10 @@
             //                    | GUI |     | SPC   |        | ENT   |     | ALT |
 
             bindings = <
-&trans  &trans  &trans    &trans     &trans     &trans  &kp C_BKLT_TOG  &trans  &trans  &kp HOME   &kp UP_ARROW    &kp END          &trans  &trans
-&trans  &trans  &trans    &mkp RCLK  &mkp LCLK  &trans  &trans          &trans  &trans  &kp LEFT   &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
-&trans  &trans  &kp PIPE  &kp TILDE  &kp PLUS   &trans                          &trans  &kp UNDER  &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans  &trans
-                          &trans     &trans     &trans                          &trans  &trans     &trans
+&trans  &trans  &trans    &trans     &trans     &trans  &trans  &trans  &trans  &kp HOME   &kp UP_ARROW    &kp END          &trans  &trans
+&trans  &trans  &trans    &mkp RCLK  &mkp LCLK  &trans  &trans  &trans  &trans  &kp LEFT   &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
+&trans  &trans  &kp PIPE  &kp TILDE  &kp PLUS   &trans                  &trans  &kp UNDER  &kp LEFT_BRACE  &kp RIGHT_BRACE  &trans  &trans
+                          &trans     &trans     &trans                  &trans  &trans     &trans
             >;
         };
 
@@ -159,13 +164,13 @@
             >;
         };
 
-        extra_layer_2 {
+        func_layer {
             display-name = "EXTRA 2";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans   &trans
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &trans  &trans  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans   &trans   &trans
-                        &trans  &trans  &trans                  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp C_BACKLIGHT_TOGGLE  &trans  &trans  &trans  &trans  &trans   &trans   &trans
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &trans                  &trans  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+&trans  &trans  &trans  &trans  &trans  &trans                                  &trans  &trans  &trans  &trans   &trans   &trans
+                        &trans  &trans  &trans                                  &trans  &trans  &trans
             >;
         };
 
