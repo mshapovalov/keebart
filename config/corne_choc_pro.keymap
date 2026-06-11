@@ -168,10 +168,10 @@
         func_layer {
             display-name = "EXTRA 2";
             bindings = <
-&kp F12  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &trans  &trans  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11
-&trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans
-&trans   &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans   &trans
-                         &trans  &trans  &trans                  &trans  &trans  &trans
+&kp F12  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &trans  &trans  &kp F6  &kp F7          &kp F8          &kp F9           &kp F10  &kp F11
+&trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_RIGHT  &trans   &trans
+&trans   &trans  &trans  &trans  &trans  &trans                  &trans  &trans          &mmv MOVE_DOWN  &trans           &trans   &trans
+                         &trans  &trans  &trans                  &trans  &trans          &trans
             >;
         };
 
