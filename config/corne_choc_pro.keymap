@@ -115,7 +115,7 @@
 &kp TAB    &kp Q             &kp W  &kp E  &kp R  &kp T             &kp C_MUTE  &kp C_PP  &kp Y        &kp U  &kp I      &kp O    &kp P                 &kp BSPC
 &kp CLCK   &mt LEFT_SHIFT A  &kp S  &kp D  &kp F  &kp G             &kp LALT    &kp RALT  &kp H        &kp J  &kp K      &kp L    &mt RIGHT_SHIFT SEMI  &kp SQT
 &kp LSHFT  &kp Z             &kp X  &kp C  &kp V  &kp B                                   &kp N        &kp M  &kp COMMA  &kp DOT  &kp FSLH              &kp ESC
-                                    &mo 5  &mo 1  &lt 1 LEFT_SHIFT                        &lt 3 SPACE  &mo 2  &kp RALT
+                                    &mo 5  &mo 6  &lt 1 LEFT_SHIFT                        &lt 3 SPACE  &mo 2  &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_PREV C_NEXT &inc_dec_kp C_VOL_DN C_VOL_UP>;
@@ -168,10 +168,10 @@
         func_layer {
             display-name = "EXTRA 2";
             bindings = <
-&kp F12  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &trans  &trans  &kp F6  &kp F7          &kp F8          &kp F9           &kp F10  &kp F11
-&trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_RIGHT  &trans   &trans
-&trans   &trans  &trans  &trans  &trans  &trans                  &trans  &trans          &mmv MOVE_DOWN  &trans           &trans   &trans
-                         &trans  &trans  &trans                  &trans  &trans          &trans
+&kp F12  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &trans  &trans  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11
+&trans   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans
+&trans   &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans   &trans
+                         &trans  &trans  &trans                  &trans  &trans  &trans
             >;
         };
 
@@ -185,13 +185,13 @@
             >;
         };
 
-        extra_layer_4 {
+        mouse_layer {
             display-name = "EXTRA 4";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans          &mmv MOVE_UP    &trans           &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans          &trans          &trans           &trans  &trans
+                        &trans  &trans  &trans                  &trans  &trans          &trans
             >;
         };
 
